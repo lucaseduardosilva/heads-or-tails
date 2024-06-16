@@ -10449,7 +10449,7 @@ a.text-dark:focus, a.text-dark:hover {
     /* --primary-color:#be3c81;--primary-color-dark:#ab3674;--primary-color-alpha:rgba(190,60,129,.5);*/
     --primary-color: #e0aa35;
     --primary-color-highlights: #f6deed;
-    --primary-color-dark: #dfbd69;
+    --primary-color-dark: #edc967;
     --primary-color-alpha: rgba(190, 60, 129, .5);
     --success-color: #85bf31;
     --success-color-dark: #72aa24;
@@ -10465,7 +10465,7 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .bg-dark {
-    background-color: #dfbd69 !important;
+    background-color: #edc967 !important;
 }
 
 .navbar-dark {
@@ -13986,7 +13986,7 @@ canvas.confetti {
 }
 
 .coin__face--back {
-    background: #dfbd69;
+    background: #edc967;
     transform: rotateX(180deg)
 }
 
