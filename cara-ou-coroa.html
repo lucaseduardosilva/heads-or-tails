@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt" xml:lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara ou Coroa</title>
+
+    <!-- QUEBRA TODO O SITE ESSE CÓDIGO ABAIXO -->
+    <link rel="stylesheet" href="styles/cara-ou-coroa-css.css" />
+    <!-- QUEBRA TODO O SITE ESSE CÓDIGO ACIMA -->
+  </head>
+
+  <body class=" ">
+    <div class="main">
+      <div class="page-wrapper">
+        <div class="container text-center">
+          <div class="col-12" style="margin-top: -100px">
+            <h1>Cara ou Coroa</h1>
+          </div>
+        </div>
+
+        <div class="container app-fonts-generator" id="fc-app">
+          <div class="row justify-content-center" v-cloak>
+            <div class="col-12 col-md-8 col-lg-10 mt-1">
+              <div class="coins _df">
+                <div class="coins__stats">
+                  <div class="mr-3">
+                    Cara:
+                    <strong>{{ local_stats.heads}}</strong>
+                  </div>
+                  <div>
+                    Coroa:
+                    <strong>{{ local_stats.tails}}</strong>
+                  </div>
+                </div>
+                <div class="coin-main mt-4" v-for="coin in coinsToFlip">
+                  <div
+                    class="coin"
+                    @click="flip(coin, $event)"
+                    :ref="'coin-' + coin"
+                  >
+                    <div class="coin__face coin__face--front">
+                      <div class="coin__inner">Cara</div>
+                    </div>
+                    <div class="coin__face coin__face--back">
+                      <div class="coin__inner">Coroa</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center mt-5">
+                <div>
+                  <button class="btn btn-primary btn-lg" @click="flipAll()">
+                    Jogar a moeda!
+                  </button>
+                </div>
+                <div class="text-sm mt-3">
+                  (toque na tela ou pressione a barra de espaço)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- QUEBRA TODO O SITE ESSE CÓDIGO ABAIXO -->
+    <script src="scripts/js1.js" defer="defer"></script>
+    <script src="scripts/js2.js" defer="defer"></script>
+    <script src="scripts/js3.js"></script>
+    <script src="scripts/js4.js" defer="defer"></script>
+    <!-- QUEBRA TODO O SITE ESSE CÓDIGO ACIMA -->
+  </body>
+</html>
