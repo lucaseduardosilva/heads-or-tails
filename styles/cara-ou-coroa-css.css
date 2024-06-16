@@ -10447,7 +10447,7 @@ a.text-dark:focus, a.text-dark:hover {
 
 :root {
     /* --primary-color:#be3c81;--primary-color-dark:#ab3674;--primary-color-alpha:rgba(190,60,129,.5);*/
-    --primary-color: #f9f295;
+    --primary-color: #e0aa35;
     --primary-color-highlights: #f6deed;
     --primary-color-dark: #dfbd69;
     --primary-color-alpha: rgba(190, 60, 129, .5);
@@ -13982,7 +13982,7 @@ canvas.confetti {
 }
 
 .coin__face--front {
-    background: #f9f295
+    background: #e0aa35
 }
 
 .coin__face--back {
